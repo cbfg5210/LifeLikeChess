@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:id="@+id/promotion_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/promotion_rook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sel_rook"
+            android:button="@null"
+            android:drawableBottom="@drawable/sel_checked"/>
+
+        <RadioButton
+            android:id="@+id/promotion_knight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sel_knight"
+            android:button="@null"
+            android:drawableBottom="@drawable/sel_checked"/>
+
+        <RadioButton
+            android:id="@+id/promotion_bishop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sel_bishop"
+            android:button="@null"
+            android:drawableBottom="@drawable/sel_checked"/>
+
+        <RadioButton
+            android:id="@+id/promotion_queen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sel_queen"
+            android:button="@null"
+            android:drawableBottom="@drawable/sel_checked"/>
+    </RadioGroup>
+
+</LinearLayout>

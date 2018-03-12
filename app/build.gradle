@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+            storeFile file(RELEASE_FILE_PATH)
+            storePassword RELEASE_STORE_PASSWORD
+        }
+    }
+
+    compileSdkVersion buildVersions.targetSdk
+    defaultConfig {
+        applicationId "com.ue.chess_life"
+        minSdkVersion buildVersions.minSdk
+        targetSdkVersion buildVersions.targetSdk
+        versionCode 259
+        versionName "2.5.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField 'boolean', 'ISAPP', 'false'
+        buildConfigField "String", "BUGLY_APP_ID", '"696e5586a9"'
+        buildConfigField 'String', 'BMOB_APP_ID', '"ac6d5ed979a5862943f9d626edd7a48a"'
+        buildConfigField 'String', 'BMOB_API_KEY', '"0ae8495281019e6ab1f1b44caf94c789"'
+
+        buildConfigField 'String', 'GDT_APP_ID', '"1105569037"'
+        buildConfigField 'String', 'GDT_SPLASH_ID', '"5060912550607717"'
+        buildConfigField 'String', 'GDT_SPLASH_ID_2', '"8000421790497033"'
+        buildConfigField 'String', 'GDT_MAIN_BANNER_ID', '"5010619550546934"'
+        buildConfigField 'String', 'GDT_GAME_BANNER_ID', '"6060826217251305"'
+        buildConfigField 'String', 'GDT_ABOUT_INTERSTITIAL_ID', '"2040823720874348"'
+
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                if (output.outputFile != null
+                        && outputFileName.endsWith('.apk')
+                        && 'release'.equals(variant.buildType.name)) {
+
+                    outputFileName = "${applicationId}_v" + defaultConfig.versionName + ".apk"
+                }
+            }
+        }
+
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a'//, 'x86', 'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            versionNameSuffix '-DEBUG'
+            signingConfig signingConfigs.config
+
+            ndk {
+                abiFilters 'armeabi-v7a', 'x86'
+            }
+        }
+    }
+    //不添加以下，运行时在红米note2出现:
+    //java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/项目包名
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+
+    implementation deps.support.app_compat
+    implementation deps.support.design
+    implementation deps.support.recyclerview
+    implementation deps.bugly
+    implementation deps.andPermission
+    implementation deps.support.constraintLayout
+    implementation deps.eventbus
+    implementation deps.gson
+    implementation deps.support.cardview
+    implementation deps.picasso
+    implementation deps.recyclerAdapterDelegate
+    implementation deps.aboutPage
+    implementation deps.recommendApp
+    implementation deps.transitionsEverywhere
+    /*rxjava*/
+    implementation deps.rxjava2
+    implementation deps.rxAndroid
+    /*rx lifecycle*/
+    implementation deps.rxLifecycle.components
+    implementation deps.rxLifecycle.lib
+    /*butterknife*/
+    implementation deps.butterKnife.lib
+    annotationProcessor deps.butterKnife.processor
+    /*room*/
+    implementation deps.room.runtime
+    annotationProcessor deps.room.compiler
+
+    implementation('com.yarolegovich:discrete-scrollview:1.3.0') {
+        exclude group: 'com.android.support', module: 'support-compat'
+    }
+
+    implementation project(':library')
+    implementation project(':cchess')
+    implementation project(':gobang')
+    implementation project(':ichess')
+    implementation project(':reversi')
+    implementation project(':moon')
+
+    /*test*/
+    debugImplementation deps.debugDb
+}

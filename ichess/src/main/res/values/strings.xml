@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rook">车</string>
+    <string name="knight">马</string>
+    <string name="bishop">相</string>
+    <string name="queen">皇后</string>
+    <string name="promotion_chance">升兵机会!请选择晋升的角色:</string>
+    <string name="oppo_promote_pawn">对方升兵!</string>
+    <string name="sure">确定</string>
+</resources>

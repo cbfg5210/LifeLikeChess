@@ -1,0 +1,108 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+def versions = [:]
+versions.arch = hasProperty("ARCH_VERSION") ? getProperty("ARCH_VERSION") : "1.0.0-alpha9"
+versions.support = "26.1.0"
+versions.constraintLayout = "1.0.2"
+versions.rxjava2 = "2.1.3"
+versions.rxAndroid = "2.0.1"
+versions.glide = "3.8.0"
+versions.picasso = "2.5.2"
+versions.gson = "2.8.2"
+versions.recyclerAdapterDelegate = "v0.7"
+versions.androidGradlePlugin = "3.0.1"
+versions.androidMavenPlugin = "1.5"
+versions.butterknife = "8.5.1"
+versions.eventbus = "3.0.0"
+versions.andPermission = "1.1.2"
+versions.permissionUtil = "1.1.3"
+versions.aboutPage = "v1.2.6"
+versions.recommendApp = "v0.6"
+versions.debugDb = "1.0.1"
+versions.leakCanary = "1.5"
+versions.playServiceAd = "11.4.2"
+versions.rxLifecycle = "2.1.0"
+versions.transitionsEverywhere = "1.7.8"
+
+versions.easySwipeMenuLayout = "1.1.2"
+versions.oneDrawable = "1.1.0"
+versions.smartMenu = "v0.1"
+
+def deps = [:]
+
+def support = [:]
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+support.cardview = "com.android.support:cardview-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.constraintLayout = "com.android.support.constraint:constraint-layout:$versions.constraintLayout"
+deps.support = support
+
+def room = [:]
+room.runtime = "android.arch.persistence.room:runtime:$versions.arch"
+room.compiler = "android.arch.persistence.room:compiler:$versions.arch"
+room.rxjava2 = "android.arch.persistence.room:rxjava2:$versions.arch"
+room.testing = "android.arch.persistence.room:testing:$versions.arch"
+deps.room = room
+
+def lifecycle = [:]
+lifecycle.runtime = "android.arch.lifecycle:runtime:$versions.arch"
+lifecycle.extensions = "android.arch.lifecycle:extensions:$versions.arch"
+lifecycle.java8 = "android.arch.lifecycle:common-java8:$versions.arch"
+lifecycle.compiler = "android.arch.lifecycle:compiler:$versions.arch"
+deps.lifecycle = lifecycle
+
+def butterKnife = [:]
+butterKnife.lib = "com.jakewharton:butterknife:$versions.butterknife"
+butterKnife.processor = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+deps.butterKnife = butterKnife
+
+def rxLifecycle = [:]
+rxLifecycle.lib = "com.trello.rxlifecycle2:rxlifecycle:$versions.rxLifecycle"
+rxLifecycle.components = "com.trello.rxlifecycle2:rxlifecycle-components:$versions.rxLifecycle"
+deps.rxLifecycle = rxLifecycle
+
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+deps.rxAndroid = "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
+deps.picasso = "com.squareup.picasso:picasso:$versions.picasso"
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+deps.recyclerAdapterDelegate = "com.github.cbfg5210:RecyclerAdapterDelegate:$versions.recyclerAdapterDelegate"
+deps.androidGradlePlugin = "com.android.tools.build:gradle:$versions.androidGradlePlugin"
+deps.androidMavenPlugin = "com.github.dcendents:android-maven-gradle-plugin:$versions.androidMavenPlugin"
+deps.eventbus = "org.greenrobot:eventbus:$versions.eventbus"
+deps.bugly = "com.tencent.bugly:crashreport_upgrade:latest.release"
+deps.andPermission = "com.yanzhenjie:permission:$versions.andPermission"
+deps.permissionUtil = "com.github.cbfg5210:PermissionUtil:$versions.permissionUtil"
+deps.aboutPage = "com.github.cbfg5210:AboutPage:$versions.aboutPage"
+deps.recommendApp = "com.github.cbfg5210:RecommendApp:$versions.recommendApp"
+deps.debugDb = "com.amitshekhar.android:debug-db:$versions.debugDb"
+deps.leakCanary = "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary"
+deps.playServiceAd = "com.google.android.gms:play-services-ads:$versions.playServiceAd"
+deps.oneDrawable = "com.github.maoruibin:OneDrawable:$versions.oneDrawable"
+deps.transitionsEverywhere = "com.andkulikov:transitionseverywhere:$versions.transitionsEverywhere"
+
+deps.easySwipeMenuLayout = "com.github.anzaizai:EasySwipeMenuLayout:$versions.easySwipeMenuLayout"
+deps.smartMenu = "com.github.cbfg5210:SmartMenu:$versions.smartMenu"
+
+ext.deps = deps
+
+
+def buildVersions = [:]
+buildVersions.minSdk = 15
+buildVersions.targetSdk = 26
+ext.buildVersions = buildVersions
+
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.maven { url 'https://jitpack.io' }
+}
+
+ext.addRepos = this.&addRepos

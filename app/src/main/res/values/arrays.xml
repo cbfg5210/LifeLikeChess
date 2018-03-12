@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="online_rooms">
+        <item>@string/room_1</item>
+        <item>@string/room_2</item>
+    </string-array>
+
+    <string-array name="ai_options">
+        <item>@string/ai_1</item>
+        <item>@string/ai_2</item>
+        <item>@string/ai_3</item>
+        <item>@string/ai_4</item>
+        <item>@string/ai_5</item>
+        <item>@string/ai_6</item>
+        <item>@string/ai_7</item>
+    </string-array>
+</resources>

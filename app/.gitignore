@@ -1,0 +1,4 @@
+/build
+*.apk
+gradle.properties
+release

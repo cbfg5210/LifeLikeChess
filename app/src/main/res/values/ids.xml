@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cbvGameBoard" type="id"/>
+    <item name="vgMyPanel" type="id"/>
+    <item name="vgOppoPanel" type="id"/>
+    <item name="ivMyImage" type="id"/>
+    <item name="ivOppoImage" type="id"/>
+    <item name="tvMyName" type="id"/>
+    <item name="tvOppoName" type="id"/>
+
+    <item name="btnStartGame" type="id"/>
+    <item name="btnExit" type="id"/>
+    <item name="btnLevel" type="id"/>
+    <item name="btnChat" type="id"/>
+    <item name="btnChange" type="id"/>
+    <item name="btnSurrender" type="id"/>
+    <item name="btnDraw" type="id"/>
+    <item name="btnUndo" type="id"/>
+
+    <item name="upvUserPanel" type="id"/>
+    <item name="btnMenu" type="id"/>
+    <item name="btnMsg" type="id"/>
+    <item name="btnNew" type="id"/>
+    <item name="btnInvite" type="id"/>
+
+    <item name="vgMenuSingle" type="id"/>
+    <item name="vgMenuDouble" type="id"/>
+    <item name="vgMenuInvite" type="id"/>
+    <item name="vgMenuOnline" type="id"/>
+
+    <item name="vsMenuSingle" type="id"/>
+    <item name="vsMenuDouble" type="id"/>
+    <item name="vsMenuInvite" type="id"/>
+    <item name="vsMenuOnline" type="id"/>
+
+    <item name="vsBtnStartGame" type="id"/>
+</resources>

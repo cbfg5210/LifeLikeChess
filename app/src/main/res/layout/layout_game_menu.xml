@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ViewStub
+        android:id="@+id/vsMenuSingle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cbvGameBoard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inflatedId="@+id/vgGameMenuPanel"
+        android:layout="@layout/layout_menu_single"/>
+
+    <ViewStub
+        android:id="@+id/vsMenuDouble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cbvGameBoard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inflatedId="@+id/vgGameMenuPanel"
+        android:layout="@layout/layout_menu_double"/>
+
+    <ViewStub
+        android:id="@+id/vsMenuOnline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cbvGameBoard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inflatedId="@+id/vgGameMenuPanel"
+        android:layout="@layout/layout_menu_online"/>
+
+    <ViewStub
+        android:id="@+id/vsMenuInvite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cbvGameBoard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inflatedId="@+id/vgGameMenuPanel"
+        android:layout="@layout/layout_menu_invite"/>
+</merge>

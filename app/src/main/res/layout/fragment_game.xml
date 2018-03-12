@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.ue.chess_life.widget.UserPanelView
+        android:id="@id/upvUserPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.ue.chess_life.widget.ChessBoardView
+        android:id="@+id/cbvGameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upvUserPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <include layout="@layout/layout_game_menu"/>
+
+    <ViewStub
+        android:id="@+id/vsBtnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:inflatedId="@+id/btnStartGame"
+        android:layout="@layout/btn_start_game"/>
+</RelativeLayout>

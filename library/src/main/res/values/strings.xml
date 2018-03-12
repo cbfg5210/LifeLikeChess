@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share">分享</string>
+    <string name="error_share">抱歉!无法调用本设备的分享功能.</string>
+    <string name="error_send_mail">抱歉!无法调用本设备的邮件编辑功能.</string>
+    <string name="error_open_browser">抱歉!无法打开本设备的浏览器.</string>
+</resources>

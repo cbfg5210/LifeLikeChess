@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion buildVersions.targetSdk
+    defaultConfig {
+        minSdkVersion buildVersions.minSdk
+        targetSdkVersion buildVersions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compileOnly deps.support.app_compat
+    compileOnly deps.support.design
+    compileOnly deps.support.recyclerview
+    compileOnly deps.andPermission
+    compileOnly deps.support.constraintLayout
+    compileOnly deps.eventbus
+    compileOnly deps.gson
+    compileOnly deps.support.cardview
+    compileOnly deps.picasso
+    compileOnly deps.recyclerAdapterDelegate
+    /*rxjava*/
+    compileOnly deps.rxjava2
+    compileOnly deps.rxAndroid
+    /*rx lifecycle*/
+    compileOnly deps.rxLifecycle.components
+    compileOnly deps.rxLifecycle.lib
+}

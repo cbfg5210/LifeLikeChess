@@ -1,0 +1,1 @@
+include ':app', ':library', ':ichess', ':cchess', ':gobang', ':moon', ':reversi', ':resource'

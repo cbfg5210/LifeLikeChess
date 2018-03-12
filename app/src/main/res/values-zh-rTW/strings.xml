@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">人生如棋</string>
+    <string name="about_txt">開發者:沈璧浮光\n當前版本:%s</string>
+    <string name="rule_gobang">\t五子棋在眾多棋類當中是最為簡單粗暴的壹種，簡單只是說規則簡單，對峙雙方只要橫/豎/斜向先連續五個棋子連壹線即為勝者。\n\t由於先手方(黑棋)存在優勢，目前也分為禁手和無禁手兩種，本遊戲裏的五子棋暫時只支持無禁手規則，禁手規則將在後續完善，敬請期待。</string>
+    <string name="rule_cnchess">1、棋子：\n象棋的棋子共三十二個，分為紅黑兩組，各十六個，由對弈雙方各執壹組，每組兵種是壹樣的，各分為七種：\n紅方：帥、仕、相、車、馬、炮、兵\n黑方：將、士、象、車、馬、炮、卒\n其中帥與將、仕與士、相與象、兵與卒的作用完全相同，僅僅是為了區分紅棋和黑棋\n2、各棋子的走法說明：\n將或帥\n移動範圍：它只能在王宮內移動。\n移動規則：它每壹步只可以水平或垂直移動壹點。\n士\n移動範圍：它只能在王宮內移動。\n移動規則：它每壹步只可以沿對角線方向移動壹點。\n象或相\n移動範圍：河界的壹側。\n移動規則：它每壹步只可以沿對角線方向移動兩點，另外，在移動的過程中不能夠穿越障礙。\n馬\n移動範圍：任何位置\n移動規則：每壹步只可以水平或垂直移動壹點，再按對角線方面向左或者右移動。另外，在移動的過程中不能夠穿越障礙。\n車\n移動範圍：任何位置\n移動規則：可以水平或垂直方向移動任意個無阻礙的點。 \n炮\n移動範圍：任何位置\n移動規則：移動起來和車很相似，但它必須跳過壹個棋子來吃掉對方的壹個棋子。\n兵\n移動範圍：任何位置\n移動規則：每步只能向前移動壹點。過河以後，它便增加了向左右移動的能力，兵不允許向後移動。\n關於勝、負、和：\n對局中，出現下列情況之壹，本方算輸，對方贏：\n1）己方的帥（將）被對方棋子吃掉；\n2）己方發出認輸請求；\n3）己方走棋超出步時限制；</string>
+    <string name="rule_chess">1、國際象棋,又稱西洋棋,棋盤是壹個正方形，等分為64個方格。這些方格有深淺兩種顏色，交替排列。深色的方格稱為黑格，淺色的方格稱為白格，棋子就放在這些格子中移動。國際象棋壹共32個棋子，黑白雙方各有16個棋子，淺顏色棋子壹方稱白棋；深顏色棋子壹方稱黑棋。每方棋子分別是：王(1個)、後(1個)、車(2個)、象(2個)、馬(2個)、兵(8個)。\n2、每種棋子的走法：\n王\n橫、直、斜都可以走，可進可退，但每步僅限走1格。(王車易位時除外)。\n後\n橫、直、斜都可以走，可進可退，格數不限，但不能越子。它是所有棋子中威力最大。\n車\n橫、直都可以走，可進可退，格數不限，但不能斜走，也不能越子。\n象\n只能斜走，可進可退，格數不限，但不能越子。每方各有兩個象，占白格的稱白格象，只能在白格裏走；占黑格稱黑格象，只能在黑格裏走。\n馬\n走法有點特別，先橫走或直走1格，再沿離開原在格子的方向斜走1格，合起來為壹步棋（即走\'日\'字，這點和中國象棋類似）。可以越子，可進可退(沒有“中國象棋”中“蹩馬腿”的限制)。\n兵\n只能向前直走，不能後退,在初始位置的兵，第壹步可以選走1格或2格，以後每步只能走1格。兵的吃子方法與其走法不同，它只能向前斜進1格吃掉對方的棋子，所以它是直進斜吃。\n3、升兵、王車易位：\n升兵：\n如果己方的兵走到對方的底線時，這時候兵就可以升為除國王和兵以外的其它棋子，由於王後的威力最大，所以，兵經常升為王後。\n王車易位：\n遊戲裏暫時沒有實現王車易位的規則，有關王車易位的規則詳情可以網上查閱。</string>
+    <string name="rule_reversi">1. 黑白棋的遊戲過程是相互翻轉對方的棋子，最後以棋盤上誰的棋子多來判斷勝負。\n2. 遊戲棋盤大小是8*8，初始狀態是兩枚白子和兩枚黑子交叉於棋盤中央。\n3. 輪到某壹方的回合時，落子的位置必須能夠與己方棋子壹起將敵方棋子夾住，可以是橫、豎或斜向。\n4. 當輪到某方但無子可下時由對方繼續走。有子可下時不能不下。\n5. 當雙方均無處可落子時遊戲結束，擁有棋子多者獲勝。</string>
+    <string name="rule_moon">\t西瓜棋，又名瓜棋、包棋、圍瓜棋、簸箕棋、月亮棋、鍋耳棋、肚臍棋、打傘棋、地球棋、月光棋，是流傳於中國的兩人棋類，與古羅馬的熊棋有關，類似的棋類有銅錢棋。規則如下：\n\t如果壹方的棋子完全被對方包圍，該棋子死亡消失；若壹方失去包圍對方的能力，則該方輸，對方贏(換言之，如果有壹方的棋子數小於3，則該方敗，對方勝)</string>
+    <string name="rule_army">
+        \t棋子介紹:軍棋的棋子每方各有25個，分別為軍旗、司令、軍長各壹；師長、旅長、團長、營長、炸彈各二；連長、排長、工兵、地雷各三。
+        \n\t吃子規則:司令>軍長 >師長> 旅長 >團長> 營長 >連長 >排長> 工兵，小棋遇大棋被吃，相同棋子相遇，則同歸於盡；工兵能排除地雷，其它棋子不能排雷；炸彈與任何棋子相遇時同歸於盡。
+        \n\t獲勝方法:殺光對方所有能移動的棋子則獲得勝利；或者用工兵挖掉對方地雷後再用本方的棋子吃掉對方的軍旗，也能獲得勝利。
+        \n\t翻棋:
+        \n\t遊戲開始:將棋子背面朝上後打亂，擺在兵站上。
+        \n\t遊戲規則:遊戲開始時，玩家依次進行翻棋，首先翻出要使用的棋子，雙方進行廝殺。
+        \n\t暗棋、明棋:
+        \n\t遊戲開始:雙方各自拿棋子布局。暗棋時己方棋子於對方不可見；明棋時雙方棋子正面朝上。炸彈不能放在第壹行，地雷只能放在最後兩行，軍旗只能放在大本營。
+        \n\t註意:暗棋時，若司令被吃，被吃的壹方亮出軍旗。\n
+    </string>
+
+    <string name="game_rule">遊戲規則</string>
+    <string name="game_rule_title">%s規則</string>
+    <string name="game_mode_double">雙人對弈</string>
+    <string name="game_mode_single">人機模式</string>
+    <string name="game_mode_invite">在線約人</string>
+    <string name="game_mode_online">在線聯機</string>
+    <string name="feedback">反饋</string>
+    <string name="share">分享</string>
+    <string name="share_to">分享到</string>
+    <string name="share_content">人生如棋是壹款大眾棋類遊戲合集，目前有五子棋、中國象棋、國際象棋、西瓜棋、黑白棋五個遊戲，
+        期待能在這裏和妳相遇，壹起體會棋中的智慧與樂趣。[下載鏈接：http://app.mi.com/details?id=com.ue.chess_life]
+    </string>
+
+    <string name="submit">提交</string>
+    <string name="user_profile">個人資料</string>
+    <string name="logout">退出登錄</string>
+    <string name="getting_profile">正在獲取用戶信息，請稍等...</string>
+    <string name="get_profile_failed">獲取用戶信息失敗，請檢查網絡再試...</string>
+    <string name="is_task_processing">當前有任務正在進行，請等待任務結束再試</string>
+    <string name="input_new_nick">請輸入新昵稱：</string>
+    <string name="nick_not_null">昵稱不能為空喔</string>
+    <string name="cancel">取消</string>
+    <string name="sure">確定</string>
+
+    <string name="app">App</string>
+
+    <string name="faq_que1">1、無法進入在線模式</string>
+    <string name="faq_ans1">版本更新之後如果無法進入在線模式，請嘗試在應用設置中清除本應用數據再進入;</string>
+
+    <string name="faq_que2">2、在線聯機</string>
+    <string name="faq_ans2">在線聯機模式前需要校對好手機時間和時區哦，不同時間和時區的玩家可能無法壹起遊戲(T_T);</string>
+
+    <string name="faq_que3">3、兼容性問題</string>
+    <string name="faq_ans3">舊版本可能會存在兼容性問題，為了更好的體驗，請點擊版本號檢查最新版本並進行升級;</string>
+
+    <string name="faq_que4">4、帳戶註冊</string>
+    <string name="faq_ans4">用戶名現階段只支持數字和字母組合，使用其它符號會導致註冊失敗;</string>
+
+    <string name="faq_que5">5、其它問題</string>
+    <string name="faq_ans5">請通過反饋功能或郵箱方式把問題反饋給我們，感謝您的支持!</string>
+
+    <string name="support">支持</string>
+    <string name="about">關於</string>
+
+    <string name="nick_label">昵稱：</string>
+    <string name="sex_label">性別：</string>
+    <string name="send">發送</string>
+
+    <string name="recommend_app">推薦應用</string>
+    <string name="tap_again_to_exit">再按壹次退出應用</string>
+    <string name="app_desc_label">應用介紹</string>
+    <string name="app_desc">這是壹款好玩的棋類遊戲合集哦，有單機、雙人、在線、 邀請四種模式，更可以邀請ta壹起對戰，還可以邊玩邊聊天哦。目前合集的遊戲有：五子棋、走月光、中國象棋、蘋果棋、國際象棋，更多好玩的正在來的路上，敬請期待與支持。\n\n特別感謝：感謝laserwave Github的開源黑白棋項目[Reversi]以及眾大神們的筆記資料。</string>
+    <string name="app_version">版本 %s</string>
+    <string name="support_ad">支持&#038;廣告</string>
+    <string name="feedback_email">反饋 (%s)</string>
+    <string name="support_tip">廣告展示是本應用的唯壹收入來源，您可以通過點擊觀看廣告的方式來支持本應用。感謝您的支持！</string>
+    <string name="faq">FAQ</string>
+    <string name="slogan">人生如棋，棋思人生</string>
+    <string name="click_to_skip">點擊跳過</string>
+    <string name="skip_text">點擊跳過 %d</string>
+    <string name="go_settings">去設置</string>
+    <string name="no_ad_permissions">權限缺失</string>
+    <string name="ad_permissions_tip">為了應用在Android 6.0以上能夠正常使用，請在應用權限頁授予所需權限。</string>
+    <string name="user_name_label">用戶名:</string>
+    <string name="try_upgrade">*^_^* : 找不到遊戲呢,升級到新版本試試吧.</string>
+
+    <string name="network_unavailable">網絡連接不可用，請檢查網絡</string>
+    <string name="prompt">提示</string>
+    <string name="connect_conflict">同壹帳號已在其他設備登錄</string>
+    <string name="login">登錄</string>
+    <string name="user_name">用戶名</string>
+    <string name="password">密碼</string>
+    <string name="register">註冊</string>
+    <string name="is_landing">正在登錄...</string>
+    <string name="Login_failed">登錄失敗:</string>
+    <string name="Is_the_registered">正在註冊...</string>
+    <string name="network_anomalies">網絡異常，請檢查網絡！</string>
+    <string name="illegal_user_name">用戶名不合法</string>
+    <string name="user_already_exist">該用戶名已被註冊</string>
+    <string name="got_it">知道了</string>
+    <string name="input_username">請輸入用戶名</string>
+    <string name="input_password">請輸入密碼</string>
+    <string name="authentication_failed">沒有註冊權限</string>
+    <string name="register_failed">註冊失敗</string>
+    <string name="register_success_login">註冊成功，正在登錄...</string>
+    <string name="choose_order">選擇先後手</string>
+    <string name="choose_ai_level">選擇關卡等級</string>
+
+    <string name="tip_title">溫馨提示</string>
+    <string name="is_exit_game">確定退出遊戲嗎？</string>
+    <string name="i_win">我贏了</string>
+    <string name="game_result_draw">平局</string>
+    <string name="i_lose">我輸了</string>
+    <string name="game_result">遊戲結果</string>
+    <string name="oppo_exit_game">對方退出了遊戲</string>
+    <string name="go_on">繼續</string>
+    <string name="exit">退出</string>
+    <string name="undo_request">悔棋請求</string>
+    <string name="undo_tip">對方請求悔棋，是否同意?</string>
+    <string name="disagree">不同意</string>
+    <string name="agree">同意</string>
+    <string name="change_desk_tip">當前正在遊戲中,確定換桌嗎?</string>
+    <string name="draw_request">和棋請求</string>
+    <string name="draw_tip">對方請求和棋，是否同意?</string>
+    <string name="invitation_time_out">邀請超時,已失效.可以嘗試重新邀請.</string>
+    <string name="refuse_invitation">對方拒絕了邀請</string>
+    <string name="game_invitation">遊戲邀請</string>
+    <string name="refuse">拒絕</string>
+    <string name="accept">接受</string>
+    <string name="oppo_user_name">對方用戶名：</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+    <string name="no_nick">(空)</string>
+    <string name="no_email">(空)</string>
+
+    <string name="data_error">數據沖突，請清空本應用數據再試</string>
+    <string name="game_data_error">*^_^* : 由於新舊版本的兼容問題導致遊戲數據解析失敗,請升級到最新版本再試!</string>
+
+    <string name="choose_room">選擇遊戲區(當前是:%s):</string>
+
+    <string name="robot">機器人</string>
+    <string name="player_two">玩家二</string>
+    <string name="me">wo</string>
+    <string name="black">黑方</string>
+    <string name="white">白方</string>
+    <string name="red">紅方</string>
+    <string name="invite_to_start">*^_^* ：妳要先約人或者被約才能開始</string>
+    <string name="user_name_cannot_null">用戶名不能為空哦</string>
+    <string name="inviting">正在發送邀請,請稍等...</string>
+    <string name="login_to_invite">登錄後才能進入邀請模式</string>
+    <string name="sending_draw_request">正在發送和棋請求,請稍等...</string>
+    <string name="sending_undo_request">正在發送悔棋請求,請稍等...</string>
+    <string name="inviting_someone">正在邀請[%s]...</string>
+    <string name="oppo_not_undo">對方不同意悔棋</string>
+    <string name="oppo_not_draw">對方不同意和棋</string>
+    <string name="oppo_accept_invitation">對方接受了邀請</string>
+    <string name="invite_tip" formatted="false">[%s] %s 邀妳壹起來玩 %s...</string>
+
+    <string name="game_gobang">五子棋</string>
+    <string name="game_moon">西瓜棋</string>
+    <string name="game_reversi">黑白棋</string>
+    <string name="game_cchess">中國象棋</string>
+    <string name="game_ichess">國際象棋</string>
+    <string name="finding_player">*^_^* ：正在尋找另壹半，請稍等...</string>
+    <string name="sending_room">正在傳送至房間，請稍等...</string>
+    <string name="error_enter_room">加入房間失敗:</string>
+    <string name="enter_room">%s 進入了房間</string>
+    <string name="oppo_leave_room">%s 離開了房間</string>
+    <string name="login_to_online">登錄後才能進入在線模式</string>
+
+    <string name="re_invite_tip">確定邀請新的玩家嗎</string>
+    <string name="change_room_tip">當前正在遊戲中,確定換區嗎?</string>
+    <string name="game_unknown">[???](未知遊戲,請檢查版本是否已更新)</string>
+    <string name="is_surrender">確定要認輸嗎?</string>
+    <string name="i_surrender">我認輸了</string>
+    <string name="oppo_surrender">對方認輸了</string>
+    <string name="undo_sure">確定要悔棋嗎?</string>
+    <string name="draw_sure">確定要和棋嗎?</string>
+    <string name="undo_time_out">悔棋請求失效,可以嘗試再次請求</string>
+    <string name="draw_time_out">請求和棋失效,可以嘗試再次請求</string>
+    <string name="unknow_error">未知錯誤，錯誤碼:%d。</string>
+
+    <string name="new_one">新局</string>
+    <string name="ai_level">等級</string>
+    <string name="change_room">換區</string>
+    <string name="undo">悔棋</string>
+    <string name="change_desk">換桌</string>
+    <string name="draw">和棋</string>
+    <string name="invite">約人</string>
+    <string name="surrender">認輸</string>
+    <string name="chat">聊天</string>
+    <string name="start">開始</string>
+
+    <string name="verNote_2d5d9">
+        1.關於頁添加版本日誌項；\n
+        2.應用推薦頁添加應用搜索功能，找應用更方便啦；
+        3、遊戲頁面優化；
+        4、修復bug
+    </string>
+
+    <string name="verNote_2d5d8">
+        1.修復bug；\n
+        2.界面優化；\n
+        3、添加應用推薦頁；\n
+        4.應用瘦身，體積降為原來壹半；
+    </string>
+
+    <string name="verNote_2d5d5">
+        1.修復bug；\n
+        2.移除交流群等部分功能，專註遊戲；\n
+        3.界面優化；
+    </string>
+
+    <string name="verNote_1d0">
+        完成功能：\n
+        1.加入五個基礎遊戲：五子棋、黑白棋、月光棋、中國象棋、國際象棋；\n
+        2.在線、邀請、雙人、人機四個模式功能；\n
+        3.遊戲交流群；\n
+        4.好友管理；
+    </string>
+
+    <string name="room_1">小仙區</string>
+    <string name="room_2">大神區</string>
+
+    <string name="ai_1">初出茅廬</string>
+    <string name="ai_2">登堂入室</string>
+    <string name="ai_3">爐火純青</string>
+    <string name="ai_4">出神入化</string>
+    <string name="ai_5">傲視群雄</string>
+    <string name="ai_6">登峰造極</string>
+    <string name="ai_7">天人合壹</string>
+</resources>
